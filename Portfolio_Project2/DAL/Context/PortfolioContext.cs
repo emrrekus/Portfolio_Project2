@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Portfolio_Project2.DAL.Entities;
 
+
 namespace Portfolio_Project2.DAL.Context
 {
     public class PortfolioContext : DbContext
@@ -23,6 +24,8 @@ namespace Portfolio_Project2.DAL.Context
         public DbSet<SocialMedia> SocialMedias { get; set; }
 
         public DbSet<Testimonial> Testimonials { get; set; }
+
+        public DbSet<ToDoList> ToDoLists { get; set; }
 
     }
 }
